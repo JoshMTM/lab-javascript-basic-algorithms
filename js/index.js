@@ -48,17 +48,40 @@ if (hacker1 > hacker2) {
   console.log("What?! You both have the same name?");
 }
 
-// Bonus Section - Lorem Ipsum
-//1. Space Counter and
+// Bonus Section -
+//1. words Counter
 
 let lorem =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 
-let spaceCounter = 0;
+let wordsCounter = 0;
+let etCounter = 0;
 
 for (let i = 0; i < lorem.length; i++) {
   if (lorem[i] === " ") {
-    spaceCounter++;
+    wordsCounter++;
   }
 }
-console.log(spaceCounter);
+console.log(wordsCounter);
+
+for (let i = 0; i < lorem.length; i++) {
+  if (lorem[i] === "et") {
+    etCounter++;
+  }
+}
+console.log(etCounter);
+
+// Bonus 2
+
+let phraseToCheck = "A man, a plan, a canal, Panama";
+let phrase = phraseToCheck.length;
+let phraseBack = Math.floor(phraseToCheck / 2);
+
+for (let i = phrase; i >= 0; i--) {
+  //phraseBack += phraseToCheck[i];
+  if (phraseToCheck[i] !== phraseToCheck[phrase - 1 - i]) {
+    console.log("hmm");
+  } else {
+    console.log("this is awesome");
+  }
+}
