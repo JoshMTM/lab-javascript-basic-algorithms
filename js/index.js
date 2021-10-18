@@ -49,3 +49,16 @@ if (hacker1 > hacker2) {
 }
 
 // Bonus Section - Lorem Ipsum
+//1. Space Counter and
+
+let lorem =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+
+let spaceCounter = 0;
+
+for (let i = 0; i < lorem.length; i++) {
+  if (lorem[i] === " ") {
+    spaceCounter++;
+  }
+}
+console.log(spaceCounter);
