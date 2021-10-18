@@ -65,7 +65,7 @@ for (let i = 0; i < lorem.length; i++) {
 console.log(wordsCounter);
 
 for (let i = 0; i < lorem.length; i++) {
-  if (lorem[i] === "et") {
+  if (lorem[i] === "e" && lorem[i + 1] === "t" && lorem[i + 1 + 1] === " ") {
     etCounter++;
   }
 }
